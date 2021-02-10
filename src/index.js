@@ -15,8 +15,8 @@ export const runGame = (task, gameData) => {
       console.log('Correct!');
     }
     if (answer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".
-      Let's try again, ${userName}!`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
