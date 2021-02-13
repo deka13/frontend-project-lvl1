@@ -5,8 +5,8 @@ const task = 'What is the result of the expression?';
 const min = 1;
 const max = 10;
 const operators = ['+', '-', '*'];
-const firstIndexOperator = 0;
-const lastIndexOperator = operators.length - 1;
+const firstOperator = 0;
+const lastOperator = operators.length - 1;
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
@@ -25,7 +25,7 @@ const calculate = (num1, num2, operator) => {
 };
 
 const gameData = () => {
-  const operator = operators[getRandomInt(firstIndexOperator, lastIndexOperator)];
+  const operator = operators[getRandomInt(firstOperator, lastOperator)];
   const num1 = getRandomInt(min, max);
   const num2 = getRandomInt(min, max);
   const answer = String(calculate(num1, num2, operator));
