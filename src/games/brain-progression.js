@@ -9,7 +9,7 @@ const maxStep = 9;
 const minFirstNum = 0;
 const maxFirstNum = 50;
 
-const makeProgression = () => {
+const gameData = () => {
   const progressionLength = getRandomInt(progressionMin, progressionMax);
   const step = getRandomInt(minStep, maxStep);
   const firstNum = getRandomInt(minFirstNum, maxFirstNum);
@@ -24,4 +24,4 @@ const makeProgression = () => {
   return [answer, question];
 };
 
-export default () => runGame(task, makeProgression());
+export default () => runGame(task, gameData());
