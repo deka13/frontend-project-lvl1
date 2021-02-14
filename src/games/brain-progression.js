@@ -15,7 +15,7 @@ const gameData = () => {
   const firstNum = getRandomInt(minFirstNum, maxFirstNum);
   const arr = [firstNum];
   for (let i = 1; i < progressionLength; i += 1) {
-    arr.push(firstNum + step);
+    arr.push(firstNum + step * i);
   }
   const randomIndex = getRandomInt(0, arr.length - 1);
   const answer = String(arr[randomIndex]);
