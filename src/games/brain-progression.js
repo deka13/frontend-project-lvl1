@@ -24,4 +24,4 @@ const gameData = () => {
   return [answer, question];
 };
 
-export default () => runGame(task, gameData());
+export default () => runGame(task, gameData);
