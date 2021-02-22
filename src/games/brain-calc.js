@@ -1,4 +1,5 @@
-import { runGame, getRandomInt } from '../index.js';
+import runGame from '../index.js';
+import getRandomInt from '../utils.js';
 
 const task = 'What is the result of the expression?';
 
